@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="css/images/open-book-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hannah's Wish List</title>
+</head>
+
+<body>
+
+    <dialog>
+        <form action="">
+            <div class="form-header">
+                <span id="closeModalBtn"><img src="css/images/x-icon.png" alt="X Icon"></span><img
+                    src="css/images/open-book-icon.png" alt="Open Book Icon">
+                <h2>What Do You Want To Read Next?</h2>
+            </div>
+            <div class="form-questions">
+                <div class="form-question-wrapper">
+                    <label for="userBookTitle">Book Title <em>(Required)</em></label>
+                    <input type="text" name="book_title" id="userBookTitle" placeholder="Enter book title" required>
+                </div>
+                <div class="form-question-wrapper">
+                    <label for="userBookAuthor">Book Author <em>(Required)</em></label>
+                    <input type="text" name="book_author" id="userBookAuthor" placeholder="Enter book author" required>
+                </div>
+                <div class="form-question-wrapper">
+                    <label for="userBookPages">Page Numbers <em>(Required)</em></label>
+                    <input type="number" name="book_pages" id="userBookPages" required>
+                </div>
+            </div>
+            <button id="submitBtn">Submit Book Entry</button>
+        </form>
+    </dialog>
+    <main class="container">
+        <h1>Hannah's Book Wish List</h1>
+        <div class="add-book-wrapper">
+            <button type="button" id="addBookBtn">Add Book</button>
+        </div>
+        <div id="bookWishListWrapper">
+            <div id="cardTemplate" class="bookCardWrapper" data-book-id="">
+                <div class="book-card-img-wrapper"><img src="css/images/open-book-icon.png" alt=""></div>
+                <div class="book-information-wrapper">
+                    <h2 id="bookTitle">A Court of Thorns and Roses</h2>
+                    <span id="bookAuthor">Sarah J. Maas</span>
+                    <div id="pageNums"><span>Page Numbers: 156</div>
+
+                </div>
+                <div class="book-card-buttons-wrapper">
+                    <button type="button" class="readBtn">Unread</button>
+                    <button type="button" class="deleteBtn">Delete</button>
+                </div>
+            </div>
+            <div id="bookCardWrapperTemplate" class="addBookCard">
+                <img src="css/images/plus-icon.png" alt="Plus Icon">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span></span>
+        <a href="https://github.com/LintonRobinson" target="_blank"><img src="css/images/github-logo.png"
+                alt="Github Logo"><span>Linton
+                Robinson</span></a>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

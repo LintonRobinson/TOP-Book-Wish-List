@@ -31,7 +31,7 @@
 body {
     width: 100vw;
     min-height: 100vh;
-    background-image: url("/css/images/gradient-background.png");
+    background-image: url("images/gradient-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

@@ -170,9 +170,46 @@ const BookWishListUI = (function() {
 
     });
 
+    const userBookTitleInput = document.querySelector('#userBookTitle');
+    const userBookAuthor = document.querySelector('#userBookAuthor');
+    const userBookPages = document.querySelector('#userBookPages');
+    const formInputs = document.querySelectorAll('input')
+
+    
+        
+        // input.addEventListener('focusout', (event) => {
+            
+        //     console.log(event.target.dataset.touched)
+        //     if (!event.target.dataset.touched) {
+        //         alert('SHould be workin')
+        //         return
+        //     } 
+        //     input.setCustomValidity("");
+        //     if (event.target.id === 'userBookTitle') {
+        //         if (userBookTitleInput.validity.valueMissing) {
+        //             userBookTitleInput.setCustomValidity("Enter a book title");
+        //             userBookTitleInput.reportValidity();
+        //         }
+        //     };
+        //     if (event.target.id === 'userBookAuthor') {
+        //         console.log(event.target.id)
+        //         if (userBookAuthor.validity.valueMissing) {
+        //             userBookAuthor.setCustomValidity("Enter a book author");
+        //             userBookAuthor.reportValidity();
+        //         }
+        //     };
+        // });
+    
+
+
+
+
+
     return { updateDisplayFromForm }
 
 })();
 
 
+// Future self: Give yourself grace. One step at a time. Keep going!
 
+// Here, I learned how messy things get when you open a dialoge element and the first input it automatically in focus. So this messed up my styling and in some cases reported validity. 

@@ -342,13 +342,22 @@ input {
 }
 
 
-/* User valid input styling */
+/* Valid input styling */
+input:valid {
+    border: green 1.5px solid;
+}
+
 input:user-valid {
     border: green 1.5px solid;
 }
 
 /* User invalid input styling */
 input:user-invalid {
+    border: rgb(155, 0, 0) 1.5px solid;
+}
+
+/* User invalid input styling */
+input:invalid {
     border: rgb(155, 0, 0) 1.5px solid;
 }
 /******************************************
